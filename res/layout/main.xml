@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	
+	    <EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/text_for_text"
+			android:inputType="text"
+			android:singleLine="true"
+			android:hint="文字列" />
+			
+		<Button
+			android:id="@+id/button_for_text"
+			android:text="テキスト書込"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="text" />
+			
+		<View
+			android:layout_width="0dp"
+			android:layout_height="5dp"
+			/>
+				
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/uri_for_uri"
+			android:inputType="text"
+			android:singleLine="true"
+			android:hint="URI" />
+			
+		<Button
+			android:id="@+id/button_for_uri"
+			android:text="URI書込"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="uri" />
+	
+		<View
+			android:layout_width="0dp"
+			android:layout_height="5dp"
+			/>
+		
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/text_for_smartposter"
+			android:inputType="text"
+			android:singleLine="true"
+			android:hint="文字列" />
+			
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/uri_for_smartposter"
+			android:inputType="text"
+			android:singleLine="true"
+			android:hint="URI" />
+			
+		<Button
+			android:id="@+id/button_for_smartposter"
+			android:text="スマートポスター書込"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="smartposter" />
+			
+		<View
+			android:layout_width="0dp"
+			android:layout_height="10dp"
+			/>
+		
+		<Button
+			android:id="@+id/button_for_read"
+			android:text="読込"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="read" />	
+			
+			
+	</LinearLayout>
+</ScrollView>
