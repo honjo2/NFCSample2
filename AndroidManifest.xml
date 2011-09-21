@@ -12,11 +12,15 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-            	<action android:name="android.nfc.action.TAG_DISCOVERED" />
-            	<category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
+        <activity android:name=".TagTechViewActivity" android:label="タグリスト表示">
+			<intent-filter>
+				<action android:name="android.nfc.action.TECH_DISCOVERED" /> <!-- リストにあるタグだけ受け取りたい -->
+			</intent-filter>
+			<meta-data
+				android:name="android.nfc.action.TECH_DISCOVERED"
+				android:resource="@xml/tag_tech_view" />
+		</activity>
         <activity android:name=".NdefWriterTextActivity" android:label="かざしてください / Ndef書込（Text）" />
         <activity android:name=".NdefWriterUriActivity" android:label="かざしてください / Ndef書込（Uri）" />
         <activity android:name=".NdefWriterSmartPosterActivity" android:label="Nかざしてください / def書込（Smart Poster）" />
